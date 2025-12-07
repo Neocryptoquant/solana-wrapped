@@ -70,7 +70,7 @@ export default function ShareableImage({ stats, walletAddress, onClose }: Sharea
   };
 
   const shareToTwitter = () => {
-    const text = `I just checked my Solana Wrapped 2025! 🚀\n\nIdentified as: ${stats?.personaWord || stats?.persona}\n\nCheck yours at: https://vialytics.solana-wrapped.com\n\n#SolanaWrapped2025 #Vialytics @solana`;
+    const text = `I just checked out my Solana Wrapped for the year 2025! 🚀\nI identified as: ${stats?.personaWord || stats?.persona}\n\nCheck yours at: https://www.solwrapped.fun\n\n#SolanaWrapped2025 #Vialytics @solana`;
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   };
@@ -94,7 +94,7 @@ export default function ShareableImage({ stats, walletAddress, onClose }: Sharea
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col h-full pt-16 px-16 pb-10">
+      <div className="relative z-10 flex flex-col h-full pt-12 px-16 pb-10">
 
         {/* 1. Header Row */}
         <div className="flex justify-between items-start mb-6">
@@ -104,7 +104,7 @@ export default function ShareableImage({ stats, walletAddress, onClose }: Sharea
             </div>
             <div>
               <h2 className="text-5xl font-black tracking-tighter leading-tight drop-shadow-xl">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#9945FF] to-[#14F195]">Solana</span> Wrapped
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#9945FF] to-[#14F195]">Solwrapped</span>.FUN
               </h2>
               <p className="text-2xl text-gray-200 mt-1 font-medium tracking-wide drop-shadow-md">2025 Review</p>
             </div>
@@ -173,14 +173,11 @@ export default function ShareableImage({ stats, walletAddress, onClose }: Sharea
           />
         </div>
 
-        {/* Footer Branding */}
-        <div className="flex justify-center items-center gap-3 opacity-90">
-          <span className="text-sm font-bold text-gray-300 uppercase tracking-widest drop-shadow-md">Powered by</span>
-          <div className="flex items-center gap-2 bg-black/40 px-3 py-1 rounded-lg border border-white/5">
-            <img src="/logos/vialytics.png" alt="Vialytics" className="h-5 w-auto invert brightness-0 filter invert-[1]" />
-            <span className="text-lg font-bold tracking-tight text-white">Vialytics</span>
-          </div>
-          <span className="text-sm font-bold text-gray-300 uppercase tracking-widest drop-shadow-md">on Solana</span>
+        {/* 4. Footer */}
+        <div className="mt-auto pt-6 border-t border-white/10">
+          <p className="text-center text-sm text-gray-400 font-medium tracking-wide">
+            Powered by <span className="text-[#14F195] font-bold">Vialytics</span> on <span className="text-[#9945FF] font-bold">Solana</span> • <span className="text-white font-bold">solwrapped.fun</span>
+          </p>
         </div>
 
       </div>

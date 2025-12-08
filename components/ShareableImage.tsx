@@ -70,7 +70,7 @@ export default function ShareableImage({ stats, walletAddress, onClose }: Sharea
   };
 
   const shareToTwitter = () => {
-    const text = `I just checked out my Solana Wrapped for the year 2025! 🚀\nI identified as: ${stats?.personaWord || stats?.persona}\n\nCheck yours at: https://www.solwrapped.fun\n\n#SolanaWrapped2025 #Vialytics @solana`;
+    const text = `I just checked out my Solana Wrapped for the year 2025! 🚀\nI identified as: ${stats?.personaWord || stats?.persona}\n\nCheck yours at: https://www.solwrapped.fun\n\n#SolanaWrapped2025 @vialyticsx @solana`;
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   };

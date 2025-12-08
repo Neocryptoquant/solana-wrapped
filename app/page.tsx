@@ -404,7 +404,7 @@ export default function Home() {
                     className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-105 flex items-center justify-center gap-2"
                   >
                     <Sparkles className="w-5 h-5" />
-                    Generate for {COST_SOL} SOL
+                    Generate for Free
                   </button>
                 </div>
               ) : status === 'pending' || status === 'processing' ? (
@@ -542,9 +542,27 @@ export default function Home() {
         {/* Footer */}
         <footer className="absolute bottom-6 left-0 right-0 text-center">
           <div className="max-w-md mx-auto px-4 space-y-4">
-            <div className="flex items-center justify-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-              <span className="text-sm text-gray-500">Powered by</span>
-              <img src="/vialytics-logo.png" alt="Vialytics" className="h-6 w-auto" />
+            <div className="flex flex-col items-center justify-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+              <span className="text-sm text-gray-400">
+                Made with ❤️ by{' '}
+                <a
+                  href="https://x.com/eaabimbola"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#9945FF] font-medium transition-colors"
+                >
+                  @eaabimbola
+                </a>
+                {' '}with{' '}
+                <a
+                  href="https://x.com/vialyticsx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-[#14F195] font-medium transition-colors"
+                >
+                  @vialyticsx
+                </a>
+              </span>
             </div>
             <div className="flex items-center justify-center gap-4 text-xs text-gray-600">
               <a href="#" className="hover:text-[#14F195] transition-colors">Terms</a>
